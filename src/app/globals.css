@@ -79,7 +79,7 @@ p, .lead { font-size: var(--type-md); color: rgba(23,23,23,0.8); }
   top: 0;
   background: var(--background);
   /* keep header below overlays/modals */
-  z-index: 10 !important;
+  z-index: 100 !important;
  }
 .header-inner {
   display: flex;
@@ -96,6 +96,9 @@ p, .lead { font-size: var(--type-md); color: rgba(23,23,23,0.8); }
   gap: 18px;
   align-items: center;
   flex: 1;
+}
+.nav img {
+  height: 100%;
 }
 
 /* Mobile nav toggle */

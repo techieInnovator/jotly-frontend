@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -9,7 +9,13 @@ export default function NavBar() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <div className="logo">Jotly</div>
+        <Image
+          src={"/jotlyLogo.png"}
+          alt="Jotly Logo"
+          width={150}
+          height={0}
+          className="max-h-18 object-contain"
+        />
 
         <nav className={`nav ${open ? "open" : ""}`} aria-label="Main navigation">
           <a className="nav-link" href="#">Product</a>
@@ -18,8 +24,8 @@ export default function NavBar() {
         </nav>
 
         <div className="header-cta">
-          <a className="btn btn-ghost" href="#waitlist">Join waitlist</a>
-          <a className="btn btn-primary" href="#waitlist">Get early access</a>
+          <a className="btn btn-ghost" style={{ cursor: "pointer" }} href="waitlist">Join waitlist</a>
+          <a className="btn btn-primary" href="/auth?mode=sign-up">Get early access</a>
         </div>
 
         <button

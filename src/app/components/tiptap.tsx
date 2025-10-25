@@ -267,36 +267,6 @@ const Tiptap = function Tiptap({ initialContent, onUpdate }: TiptapProps) {
             </span>
             <span className="ai-label">{loadingAction === 'summarize' ? '…' : 'Summarize'}</span>
           </button>
-
-          <button title="Polish" aria-label="Polish" className="tiptap-ai-btn" onMouseDown={(e) => e.preventDefault()} onClick={() => applyMockAI('polish')}>
-            <span className="ai-icon" aria-hidden>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </span>
-            <span className="ai-label">{loadingAction === 'polish' ? '…' : 'Polish'}</span>
-          </button>
-
-          <button title="Demo" aria-label="Play demo" className="tiptap-ai-btn" onMouseDown={(e) => e.preventDefault()} onClick={playDemo}>
-            <span className="ai-icon" aria-hidden>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3v18l15-9L5 3z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round"/></svg>
-            </span>
-            <span className="ai-label">{loadingAction === 'demo' ? '…' : 'Demo'}</span>
-          </button>
-
-          <button title="Copy" aria-label="Copy content" className="tiptap-ai-btn" onMouseDown={(e) => e.preventDefault()} onClick={copyContent}>
-            <span className="ai-icon" aria-hidden>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 9h8v8H9zM5 5h8v8H5z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </span>
-            <span className="ai-label">Copy</span>
-          </button>
-          <div style={{ width: 8 }} />
-          <button title="Demo schedule" aria-label="Demo schedule" className="tiptap-demo-btn" onMouseDown={(e) => e.preventDefault()} onClick={demoSchedule}>Demo: Schedule</button>
-          <button title="Demo ticket" aria-label="Demo ticket" className="tiptap-demo-btn" onMouseDown={(e) => e.preventDefault()} onClick={demoTicket}>Demo: Ticket</button>
-          <div style={{ width: 8 }} />
-          <button title="Actions" aria-label="Smart actions" className="tiptap-action-btn" onMouseDown={(e) => e.preventDefault()} onClick={openActions}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-              <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
         </div>
       </div>
 
