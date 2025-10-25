@@ -17,9 +17,9 @@ export default function Hero() {
           <h1 className="hero-main">Capture clarity.</h1>
           <p className="hero-subtitle">A calm space for your thoughts — jot faster, think clearer, stay organized.</p>
 
-          <div className="hero-actions">
+          {/* <div className="hero-actions">
             <HeroDemos />
-          </div>
+          </div> */}
 
           <div className="hero-featureline">Lightweight · Distraction-free · Searchable</div>
         </div>

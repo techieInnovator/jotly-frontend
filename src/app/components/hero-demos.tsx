@@ -18,8 +18,7 @@ export default function HeroDemos() {
 
   return (
     <div style={{ display: 'flex', gap: 10 }}>
-      <button className="btn btn-primary large" onClick={runSchedule}>See schedule demo</button>
-      <button className="btn btn-ghost large" onClick={runTicket}>See ticket demo</button>
+      <button className="btn btn-ghost large" onClick={runSchedule}>See Quick demo</button>
     </div>
   )
 }
