@@ -1,10 +1,10 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
+import { NextResponse } from "next/server";
 
-export default clerkMiddleware();
+export default function middleware(req) {
+  // For now, allow all routes
+  return NextResponse.next();
+}
 
 export const config = {
-  matcher: [
-    '/((?!_next|static|favicon.ico|auth).*)', // exclude /auth
-    '/(api|trpc)(.*)',
-  ],
+  matcher: ["/((?!_next|api|static|.*\\..*).*)"], // optional
 };

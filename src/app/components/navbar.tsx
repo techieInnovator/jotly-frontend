@@ -10,11 +10,12 @@ export default function NavBar() {
     <header className="site-header">
       <div className="container header-inner">
         <Image
+          onClick={() => (window.location.href = "/")}
           src={"/jotlyLogo.png"}
           alt="Jotly Logo"
           width={150}
           height={0}
-          className="max-h-18 object-contain"
+          className="max-h-18 object-contain cursor-pointer"
         />
 
         <nav className={`nav ${open ? "open" : ""}`} aria-label="Main navigation">
@@ -24,8 +25,8 @@ export default function NavBar() {
         </nav>
 
         <div className="header-cta">
-          <a className="btn btn-ghost" style={{ cursor: "pointer" }} href="waitlist">Join waitlist</a>
-          <a className="btn btn-primary" href="/auth?mode=sign-up">Get early access</a>
+          <a className="btn btn-ghost" style={{ cursor: "pointer" }} href="/waitlist">Join waitlist</a>
+          <a className="btn btn-primary" style={{ cursor: "pointer" }} href="/sign-in">Sign In</a>
         </div>
 
         <button
